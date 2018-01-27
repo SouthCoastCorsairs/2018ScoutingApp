@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Scouting App 2018</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="increase_scale">+</string>
+    <string name="decrease_scale">-</string>
+    <string name="Scale_Value">0</string>
+    <string name="start_match">Start</string>
+    <string name="team_number">Team Number</string>
 </resources>
