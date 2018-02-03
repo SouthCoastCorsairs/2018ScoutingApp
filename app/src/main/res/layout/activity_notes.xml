@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guestaccount.scoutingapp2018.Notes">
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Teleop"
+        android:text="@string/tele_op"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/button15" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Autonomous"
+        android:text="@string/auto"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button14"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
