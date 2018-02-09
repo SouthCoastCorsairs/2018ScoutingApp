@@ -7,27 +7,27 @@
     tools:context="com.example.guestaccount.scoutingapp2018.Notes">
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/tele_notes"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Teleop"
         android:text="@string/tele_op"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
-        app:layout_constraintStart_toEndOf="@+id/button15" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes_notes"
+        app:layout_constraintStart_toEndOf="@+id/auto_notes" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/auto_notes"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Autonomous"
         android:text="@string/auto"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tele_notes"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/notes_notes"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:text="@string/notes"
