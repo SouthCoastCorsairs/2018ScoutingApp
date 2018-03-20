@@ -7,28 +7,28 @@
     tools:context="com.example.guestaccount.scoutingapp2018.Autonomous">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/notes_auto"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Notes"
         android:text="@string/notes"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teleop_auto"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/teleop_auto"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Teleop"
         android:text="@string/tele_op"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/auto"
+        app:layout_constraintEnd_toStartOf="@+id/notes_auto"
         app:layout_constraintHorizontal_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/scale_auto_entry"
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -37,109 +37,103 @@
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/scale_auto" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/scale_auto"
         android:layout_width="275dp"
-        android:layout_height="30dp"
+        android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:text="@string/scale_cubes"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/teleop_auto" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/scale_auto_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:onClick="scale_auto"
         android:text="@string/decrease_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
+        app:layout_constraintEnd_toStartOf="@+id/scale_auto_entry"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/scale_auto_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:onClick="scale_auto"
         android:text="@string/increase_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/scale_auto_entry" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/switch_auto_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/switch_auto_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/deliver_auto_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry"
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/deliver_auto_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/switch_auto"
         android:layout_width="275dp"
         android:layout_height="30dp"
         android:layout_marginTop="36dp"
         android:text="@string/switch_cubes"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/scale_auto_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/scale_auto_entry"
+        app:layout_constraintTop_toBottomOf="@+id/scale_auto_entry" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/switch_auto_entry"
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -148,11 +142,11 @@
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/switch_auto" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="275dp"
+        android:id="@+id/deliver_auto"
+        android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginTop="36dp"
         android:text="@string/deliver_cubes"
@@ -160,10 +154,10 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/switch_auto_entry" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/deliver_auto_entry"
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -172,10 +166,10 @@
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/deliver_auto" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/baseline_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
@@ -183,23 +177,23 @@
         android:layout_marginTop="16dp"
         android:text="@string/stayed_still"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/button17"
+        app:layout_constraintEnd_toStartOf="@+id/baseline_yes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/baseline" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/baseline_yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
         android:layout_marginRight="120dp"
         android:text="@string/crossed_baseline"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/baseline_no"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/baseline"
         android:layout_width="275dp"
         android:layout_height="30dp"
         android:layout_marginTop="36dp"
@@ -208,10 +202,10 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/auto"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:layout_marginLeft="16dp"
@@ -219,8 +213,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/teleop_auto"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="16dp" />
 
 </android.support.constraint.ConstraintLayout>

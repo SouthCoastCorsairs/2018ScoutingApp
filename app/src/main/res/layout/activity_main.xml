@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start"
         android:layout_width="117dp"
         android:layout_height="56dp"
         android:layout_marginEnd="150dp"
@@ -21,10 +21,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/match_number_entry" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/team_number_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -37,10 +37,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/team_number" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/match_number_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="96dp"
@@ -52,10 +52,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/match_number" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/red_alliance"
         android:layout_width="112dp"
         android:layout_height="55dp"
         android:layout_marginStart="96dp"
@@ -63,23 +63,23 @@
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="@string/red"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/blue_alliance"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/alliance" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/blue_alliance"
         android:layout_width="112dp"
         android:layout_height="55dp"
         android:layout_marginEnd="96dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="@string/blue"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/red_alliance"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/team_number"
         android:layout_width="211dp"
         android:layout_height="26dp"
         android:layout_marginBottom="440dp"
@@ -94,10 +94,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/blue_alliance" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/match_number"
         android:layout_width="211dp"
         android:layout_height="26dp"
         android:layout_marginEnd="8dp"
@@ -110,10 +110,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/team_number_entry" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/alliance"
         android:layout_width="211dp"
         android:layout_height="26dp"
         android:layout_marginTop="32dp"

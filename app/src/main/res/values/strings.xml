@@ -16,10 +16,21 @@
     <string name="notes">NOTES</string>
     <string name="scale_cubes">Power Cubes to Scale</string>
     <string name="switch_cubes">Power Cubes to Friendly Switch</string>
-    <string name="deliver_cubes">Cubes Delivered to Humans</string>
+    <string name="deliver_cubes">Power Cubes Delivered to Humans</string>
     <string name="switch_auto">0</string>
     <string name="delivered_auto">0</string>
     <string name="baseline">Baseline Crossed</string>
     <string name="crossed_baseline">Yes</string>
     <string name="stayed_still">No</string>
+    <string name="scale_tele">0</string>
+    <string name="switch_tele">0</string>
+    <string name="opp_switch">0</string>
+    <string name="opp_switch_cubes">Power Cubes Delivered to Opponent Switch</string>
+    <string name="delivered_tele">0</string>
+    <string name="climb">Climbing</string>
+    <string name="can_climb">Yes</string>
+    <string name="can_not_climb">No</string>
+    <string name="team_climb">Team</string>
+    <string name="note_input">Notes</string>
+    <string name="submit">Submit</string>
 </resources>

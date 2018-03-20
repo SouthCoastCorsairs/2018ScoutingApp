@@ -21,16 +21,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void startMatch(View view) {
         //Do something in response to button
-            Intent intent = new Intent(this, Autonomous.class);
+            Intent Start = new Intent(this, Autonomous.class);
         //    EditText editText =(EditText) findViewById(R.id.editText);
         //    String message =editText.getText().toString();
         //    intent.putExtra(EXTRA_MESSAGE, message);
-            startActivity(intent);
-        //}
+            startActivity(Start);
+        }
 
         //public void increaseScale (View view) {
         //  TextView Scale_Display = findViewById(R.id.Scale_display);
         //  int Scale = Integer.parseInt(Scale_Display.getText().toString());
         //  Scale_Display.setText(""+Scale++);
-    }
 }
