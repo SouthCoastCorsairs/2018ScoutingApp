@@ -60,7 +60,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/holo_red_dark"
+        android:background="@drawable/red_alliance"
         android:text="@string/red"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/blue_alliance"
