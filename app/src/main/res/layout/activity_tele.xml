@@ -70,7 +70,7 @@
         android:layout_marginStart="16dp"
         android:text="@string/decrease_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -100,7 +100,7 @@
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
         app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp"/>
 
     <Button
@@ -180,7 +180,7 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_auto_entry" />
+        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry" />
 
     <TextView
         android:id="@+id/deliver_tele"
@@ -231,7 +231,7 @@
         app:layout_constraintTop_toBottomOf="@+id/deliver_tele" />
 
     <TextView
-        android:id="@+id/switch_auto_entry"
+        android:id="@+id/switch_tele_entry"
         android:layout_width="175dp"
         android:layout_height="45dp"
         android:layout_marginTop="16dp"

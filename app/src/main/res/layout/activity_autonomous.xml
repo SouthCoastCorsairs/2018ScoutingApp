@@ -57,12 +57,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
-        android:onClick="scale_auto"
         android:text="@string/decrease_value"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
         app:layout_constraintEnd_toStartOf="@+id/scale_auto_entry"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp"/>
 
     <Button
         android:id="@+id/scale_auto_up"
@@ -70,12 +69,11 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:onClick="scale_auto"
         android:text="@string/increase_value"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/scale_auto_entry" />
+        app:layout_constraintStart_toEndOf="@+id/scale_auto_entry" android:layout_marginEnd="16dp"/>
 
     <Button
         android:id="@+id/switch_auto_down"
@@ -84,7 +82,7 @@
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
         app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp" />
 
     <Button
@@ -95,7 +93,7 @@
         android:text="@string/increase_value"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_auto_entry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
         app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
 
     <Button
@@ -133,7 +131,7 @@
         app:layout_constraintTop_toBottomOf="@+id/scale_auto_entry" />
 
     <TextView
-        android:id="@+id/switch_auto_entry"
+        android:id="@+id/switch_tele_entry"
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -154,7 +152,7 @@
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_auto_entry" />
+        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry" />
 
     <TextView
         android:id="@+id/deliver_auto_entry"
